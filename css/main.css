@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Heebo", sans-serif;
+}
+
+/* Sign-up form start */
+
+h1 {
+  font-size: 48px;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
+picture {
+  flex: 0 0 400px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  color: hsl(234, 29%, 20%);
+  box-shadow: 0 30px 40px hsla(235, 18%, 10%, 0.5);
+}
+
+.card__customs {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.card__customs li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.card__customs li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+  background-image: url("../images/icon-list.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  gap: 8px;
+}
+
+.card__form label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card__form input {
+  padding: 16px 24px;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.card__form input:hover,
+.card__form input:focus {
+  border-color: hsl(235, 18%, 26%);
+  outline: none;
+}
+
+.card__form button {
+  margin-top: 8px;
+}
+
+.card__label-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__error {
+  display: none;
+  color: hsl(4, 100%, 67%);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card__form input.card__input--error {
+  background-color: hsla(4, 100%, 67%, 0.15);
+  border-color: hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+
+.card__signup {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  width: 100%;
+  max-width: 928px;
+}
+
+.card__content {
+  flex: 1;
+  padding: 40px 30px 40px 40px;
+}
+
+.card__image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card__content h1 {
+  margin-bottom: 24px;
+}
+
+.card__content > p {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.card__content p,
+.card__customs li {
+  font-size: 16px;
+}
+
+/* Success message start */
+
+h2 {
+  font-size: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.card__success {
+  width: 390px;
+  margin: 50px;
+}
+
+.card__form button,
+.card__success button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card__success h2 {
+  padding-top: 15px;
+  padding-bottom: 7px;
+}
+
+.card__success p {
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+
+.card__form button:hover,
+.card__success button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(344, 100%, 65%),
+    hsl(14, 100%, 60%)
+  );
+  box-shadow: 0 16px 32px hsla(4, 100%, 67%, 0.5);
+}
+
+.attribution {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  /* Sign-up form start */
+  body {
+    background-color: white;
+  }
+
+  picture {
+    flex: none;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .wrapper {
+    min-height: auto;
+    align-items: flex-start;
+  }
+
+  .card {
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .card__signup {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+
+  .card__content {
+    padding: 32px 24px;
+  }
+
+  .card__image {
+    border-radius: 0px;
+  }
+  /* Success message start */
+
+  h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .card__success {
+    width: 100%;
+    margin: 0;
+    padding: 120px 24px 24px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .card__success button {
+    margin-top: auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .card__icon {
+    width: 64px;
+  }
+
+  .attribution {
+    color: hsl(234, 29%, 20%);
+  }
+}
