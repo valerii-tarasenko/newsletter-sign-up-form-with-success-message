@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/valerii-tarasenko/article-preview-component)
-- Live Site URL: [Article preview component](https://valerii-tarasenko.github.io/article-preview-component/)
+- Live Site URL: [newsletter-sign-up-form-with-success-message](https://valerii-tarasenko.github.io/newsletter-sign-up-form-with-success-message/)
 
 ## My process
 
